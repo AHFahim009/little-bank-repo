@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK PAGE</title>
+    <!--  TAILWIND CND-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header> <h1 class="text-center mt-5 text-5xl">LETS GET SOME <span class="font-semibold text-violet-600">MONEY</span></h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="bg-green-600 p-8 ">
+                  <h1 class="text-2xl"> Deposite</h1>
+                  <h4 class="text-5xl" >$ <span id="deposite-total">0</span></h4>   
+                </div>
+                <div class="bg-green-600 p-8 ">
+                  <h1 class="text-2xl"> Witdraw</h1>
+                  <h4 class="text-5xl">$ <span id="withdraw-total">0</span></h4>   
+                </div>
+                <div class="bg-green-600 p-8 ">
+                  <h1 class="text-2xl"> Balance</h1>
+                  <h4 class="text-5xl">$ <span id="balance-total">5000</span></h4>   
+                </div>
+                </div>
+                </section>
+                <section class="mt-12">
+                    <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                        <div class="bg-green-600 p-8 ">
+                          <h1 class="text-2xl mb-2" > Please Deposite</h1>
+                          <input class="w-9/12 block mb-2 px-3" type="email" name="" id="deposite-field" placeholder="$ Please add you deposite">
+                          <button id="deposite-button" class="bg-amber-600 px-8 py-2 hover:bg-sky-600">Deposite</button>
+                            
+                        </div>
+                        <div class="bg-green-600 p-8 ">
+                          <h1 class="text-2xl mb-2"> Please Witdraw</h1>
+                          <input class="w-9/12 block mb-2 px-3" type="email" name="" id="withdraw-field" placeholder="$ Withdraw your money">
+                         <button id="withdraw-button" class="bg-amber-600 px-8 py-2 hover:bg-sky-600"> Withdraw</button>  
+                        </div>
+                        </div>
+                </section>
+    </main>
+
+    <!-- JS SCRIPT -->
+    <script src="bank.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>
